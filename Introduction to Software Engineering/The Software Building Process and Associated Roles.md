@@ -152,7 +152,7 @@ Unit testing occurs during each sprint, helping detect problems early and reduci
 
 ---
 
-### 4. Minimum Viable Product (MVP)
+#### Minimum Viable Product (MVP)
 
 After several Agile sprints, the team may produce a **Minimum Viable Product (MVP)**.
 
@@ -167,7 +167,7 @@ The MVP does not need to contain every planned feature.
 
 ---
 
-### 5. Agile Manifesto — Four Core Values
+#### Agile Manifesto — Four Core Values
 
 The Agile Manifesto emphasizes:
 
@@ -180,7 +180,7 @@ The items on the right still have value, but Agile places greater emphasis on th
 
 ---
 
-### 6. Advantages of Agile
+#### Advantages of Agile
 
 - Handles changing requirements well.
 - Encourages frequent stakeholder and customer feedback.
@@ -190,7 +190,7 @@ The items on the right still have value, but Agile places greater emphasis on th
 
 ---
 
-### 7. Disadvantages of Agile
+#### Disadvantages of Agile
 
 Because the full product scope may not be clearly defined at the beginning, it can be harder to estimate:
 
@@ -203,7 +203,7 @@ Resource allocation and long-term planning can therefore be more challenging tha
 
 ---
 
-### 8. Waterfall vs. V-Shape vs. Agile
+### 4. Waterfall vs. V-Shape vs. Agile
 
 | Feature | Waterfall | V-Shape | Agile |
 |---|---|---|---|
@@ -220,7 +220,7 @@ Resource allocation and long-term planning can therefore be more challenging tha
 
 ---
 
-### 9. Sequential vs. Iterative Development
+### 5. Sequential vs. Iterative Development
 
 The most important distinction is that **Waterfall and V-Shape are sequential**, while **Agile is iterative**.
 
@@ -245,7 +245,7 @@ The product develops incrementally through repeated development and feedback cyc
 
 ---
 
-### 10. Key Takeaways
+### 6. Key Takeaways
 
 - **Waterfall** and **V-Shape** are sequential SDLC methodologies.
 - **Agile** is iterative and divides development into short **sprints**.
