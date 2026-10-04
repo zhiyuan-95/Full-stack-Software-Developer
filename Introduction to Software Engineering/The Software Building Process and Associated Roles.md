@@ -2,8 +2,256 @@
 
 ### Software Development Methodologies
 
+Software development methodologies provide structured approaches for organizing the **Software Development Life Cycle (SDLC)**. They help development teams define how work is organized, how team members communicate, when information is shared, and how requirements, design, coding, testing, and feedback are handled.
 
+Three common approaches are:
 
+1. **Waterfall**
+2. **V-Shape Model**
+3. **Agile**
 
+---
 
+### 1. Waterfall Model
 
+#### Core Idea
+
+Waterfall is a **sequential software development model**. The output of one phase becomes the input for the next phase, and development does not move forward until the previous phase is complete.
+
+```text
+Requirements → Design → Development → Testing → Deployment / Maintenance
+```
+
+#### Characteristics
+
+- Requirements and planning are defined **upfront**.
+- Architectural design is completed before coding begins.
+- Each phase is discrete and well-defined.
+- Customers usually do not see the product until the testing phase.
+- Major releases may be separated by long periods of time.
+
+#### Advantages
+
+- Simple and easy to understand.
+- Clearly defined stages and responsibilities.
+- Upfront planning makes it easier to estimate:
+  - Budget
+  - Schedule
+  - Resource allocation
+
+#### Disadvantages
+
+- **Low flexibility**.
+- Requirement changes are difficult to incorporate later.
+- Missing or incorrect requirements may be expensive to fix after development has progressed.
+- Customer feedback arrives relatively late.
+- Poor fit for projects where requirements frequently change.
+
+---
+
+### 2. V-Shape Model
+
+#### Core Idea
+
+The V-Shape model is also **sequential**, but it emphasizes the relationship between development activities and testing activities.
+
+The left side of the V represents **verification**, while the right side represents **validation**.
+
+```text
+Verification                     Validation
+
+Planning                 ↔       Acceptance Testing
+System Design            ↔       System Testing
+Architecture Design      ↔       Integration Testing
+Module Design            ↔       Unit Testing
+              \          /
+                 Coding
+```
+
+#### Verification Phases
+
+Going down the left side of the V:
+
+1. Planning
+2. System Design
+3. Architecture Design
+4. Module Design
+
+The **coding phase** occurs at the bottom of the V.
+
+#### Validation Phases
+
+Going upward on the right side:
+
+1. Unit Testing
+2. Integration Testing
+3. System Testing
+4. Acceptance Testing
+
+Each verification phase corresponds to a validation phase.
+
+#### Important Feature
+
+Testing is planned early. Test plans are created during the verification phases and executed during the corresponding validation phases.
+
+#### Advantages
+
+- Simple and easy to understand.
+- Highly structured.
+- Testing is considered early in development.
+- Early test planning can save time during coding and validation.
+
+#### Disadvantages
+
+- Even more rigid than Waterfall.
+- Difficult to accommodate changing requirements.
+- Once testing begins, changing functionality can be difficult and costly.
+
+---
+
+### 3. Agile Model
+
+#### Core Idea
+
+Agile is an **iterative and cyclical development approach** rather than a sequential one.
+
+Development is divided into short cycles called **sprints**, which typically last **1–4 weeks**.
+
+Instead of building the entire product before receiving feedback, the team repeatedly develops and releases smaller pieces of working software.
+
+#### Typical Sprint
+
+```text
+Planning
+   ↓
+Design
+   ↓
+Development
+   ↓
+Testing
+   ↓
+Feedback / Sprint Demo
+   ↓
+Next Sprint
+```
+
+Each sprint still follows the general SDLC phases, but on a much smaller and faster cycle.
+
+#### Sprint Demo
+
+At the end of each sprint:
+
+- Working functionality is demonstrated.
+- Stakeholders review the new features.
+- Feedback is collected.
+- Feedback can influence planning for the next sprint.
+
+#### Testing
+
+Unit testing occurs during each sprint, helping detect problems early and reducing the risk of major failures later.
+
+---
+
+### 4. Minimum Viable Product (MVP)
+
+After several Agile sprints, the team may produce a **Minimum Viable Product (MVP)**.
+
+An MVP contains enough core functionality to:
+
+- Demonstrate the product.
+- Validate assumptions about the software.
+- Gather stakeholder and customer feedback.
+- Determine whether the product is solving the intended problem.
+
+The MVP does not need to contain every planned feature.
+
+---
+
+### 5. Agile Manifesto — Four Core Values
+
+The Agile Manifesto emphasizes:
+
+1. **Individuals and interactions** over processes and tools.
+2. **Working software** over comprehensive documentation.
+3. **Customer collaboration** over contract negotiation.
+4. **Responding to change** over following a plan.
+
+The items on the right still have value, but Agile places greater emphasis on the items on the left.
+
+---
+
+### 6. Advantages of Agile
+
+- Handles changing requirements well.
+- Encourages frequent stakeholder and customer feedback.
+- Produces working software frequently.
+- Allows teams to identify problems earlier.
+- Supports modular development, where smaller components can be developed, tested, and integrated independently.
+
+---
+
+### 7. Disadvantages of Agile
+
+Because the full product scope may not be clearly defined at the beginning, it can be harder to estimate:
+
+- Total budget
+- Long-term schedule
+- Resource requirements
+- Final delivery date
+
+Resource allocation and long-term planning can therefore be more challenging than with Waterfall or V-Shape.
+
+---
+
+### 8. Waterfall vs. V-Shape vs. Agile
+
+| Feature | Waterfall | V-Shape | Agile |
+|---|---|---|---|
+| Development style | Sequential | Sequential | Iterative / Cyclical |
+| Planning | Mostly upfront | Mostly upfront | Repeated each sprint |
+| Testing | Later in development | Planned early, executed later | Continuous |
+| Customer feedback | Late | Late | Frequent |
+| Requirement changes | Difficult | Very difficult | Relatively easy |
+| Release frequency | Infrequent | Infrequent | Frequent |
+| Budget estimation | Easier | Easier | More difficult |
+| Flexibility | Low | Very low | High |
+| Working software | Usually late | Usually late | Produced incrementally |
+| Best suited for | Stable requirements | Stable, highly structured projects | Changing requirements |
+
+---
+
+### 9. Sequential vs. Iterative Development
+
+The most important distinction is that **Waterfall and V-Shape are sequential**, while **Agile is iterative**.
+
+#### Waterfall / V-Shape
+
+```text
+Phase 1 → Phase 2 → Phase 3 → Phase 4
+```
+
+The team generally progresses through the development phases in order and obtains substantial customer feedback later in the process.
+
+#### Agile
+
+```text
+Sprint 1 → Feedback
+Sprint 2 → Feedback
+Sprint 3 → Feedback
+Sprint 4 → Feedback
+```
+
+The product develops incrementally through repeated development and feedback cycles.
+
+---
+
+### 10. Key Takeaways
+
+- **Waterfall** and **V-Shape** are sequential SDLC methodologies.
+- **Agile** is iterative and divides development into short **sprints**.
+- Waterfall is simple and makes budgeting and resource planning easier, but it handles changing requirements poorly.
+- V-Shape connects each development stage with a corresponding testing stage and emphasizes early test planning.
+- V-Shape is highly structured but very rigid.
+- Agile emphasizes frequent releases, continuous testing, customer feedback, and adapting to change.
+- Agile handles changing requirements well, but long-term budgeting, scheduling, and resource allocation can be more difficult.
+- Agile is one of the most widely used approaches in modern software development.
