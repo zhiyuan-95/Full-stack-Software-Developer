@@ -80,8 +80,57 @@
     - System documentation: README files, inline comments, architecture and design documents, verification information and maintenance guides
     - User documentation: User guides, instructional videos, manuals, online and inline help    
 
-    
+### Requiement gathering process
+**Steps to gathering requirements**:
+ - Identifying stakeholders: decision makers, end-users, system adm, eng, marketing, sales, customer support 
+ - Establishing goals and objectives: 
+    Goal: broad, long-term achievable outcomes
+    Objectives: actionable, measurable actions that achieve the goal
+   
+ - Eliciting requirements from the stakeholders
+ - Documenting the requirements
+ - Analyzing and comfirming the requirements
+ - prioritizing
+   - must-have
+   - Highly desired
+   - Nice to have
 
+**Requirement documentation**
+1. **Software requirement specification(SRS) - most common**
+ SRS Captures functionalities the software should perform and Establishes benchmarks/ service -levels for performance
+ contains
+   - Purpose and scope
+   - Constraints, assumptions,
+   - dependencies
+   - Requirements
+
+2. **User Requiement specification(URS)**
+   - URS describes business need and end-user expectations
+   - User Stories:
+     - Who is the user?
+     - What is the function that needs to be performed
+     - Why does the user want this functionality
+   - Confirmed during user acceptance testing
+   - often combined into the SRS
+
+3. **System requiement specification(SysRS)**
+   - Outlines requirement of the system
+   - Broadeer than an SRS
+   - Contians:
+     - System capabilities
+     - Interfaces and user characteristics
+     - Policy
+     - Regulations
+     - Personnel
+     - Performance
+     - Security
+     - System acceptance criteria
+     - Harware expactations
+   
+
+## The Software Building Process and Associated Roles
+
+### Software Development Methodologies
 
 
 
