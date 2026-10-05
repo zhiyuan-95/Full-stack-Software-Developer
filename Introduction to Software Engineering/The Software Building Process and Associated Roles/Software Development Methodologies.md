@@ -1,4 +1,4 @@
-### Software Development Methodologies
+## Software Development Methodologies
 
 Software development methodologies provide structured approaches for organizing the **Software Development Life Cycle (SDLC)**. They help development teams define how work is organized, how team members communicate, when information is shared, and how requirements, design, coding, testing, and feedback are handled.
 
