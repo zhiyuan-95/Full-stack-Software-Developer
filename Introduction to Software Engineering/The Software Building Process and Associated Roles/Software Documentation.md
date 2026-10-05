@@ -1,67 +1,83 @@
-# Software Documentation
+# Software Documentation 
 
-## Bottom Line
+## Definition
 
-Software documentation explains what software is, how it works, how to use it, and how related software work should be performed. It can be written, video-based, or graphical, and it supports every phase of the software development life cycle, or SDLC.
+Software documentation explains:
 
-## What Software Documentation Is
+- What a software product is
+- How it works
+- How to use, install, or troubleshoot it
+- How it is developed and maintained
 
-Software documentation is information connected to a software product's development and use. It describes the product, explains how people should use it, and helps different audiences understand the software from their own point of view.
+Documentation is important throughout every phase of the Software Development Life Cycle (SDLC).
 
-Common audiences include:
+## Documentation Formats
+
+Software documentation can be:
+
+1. Written
+2. Video-based
+3. Graphical, such as diagrams and flowcharts
+
+## Intended Audiences
+
+Documentation may be created for:
 
 - End users
 - Software developers
+- Software architects
 - QA engineers
 - System administrators
-- Other project stakeholders
+- Other stakeholders
 
-Documentation can appear in three main formats:
+## Main Categories
 
-- Written documentation
-- Video documentation
-- Graphical documentation, such as diagrams or flowcharts
-
-## Product Documentation and Process Documentation
-
-Software documentation can be divided into two broad categories: product documentation and process documentation.
-
-Product documentation explains the software product itself. It focuses on the product's features, functionality, design, behavior, installation, use, and troubleshooting.
-
-Process documentation explains how to complete a task or business process. It focuses on the steps needed to perform work correctly and consistently.
+| Category | Purpose |
+|---|---|
+| Product documentation | Describes the product’s features, functionality, construction, and use |
+| Process documentation | Explains how to complete a task or business process properly |
 
 ## Types of Product Documentation
 
-### Requirements Documentation
+### 1. Requirements Documentation
 
-Requirements documentation is usually written during the planning phase of the SDLC. It is mainly intended for the development team, including developers, architects, and QA personnel.
+Created during the planning phase for developers, architects, and QA personnel.
 
-Requirements documentation describes the expected features and functionality of the software system. Examples include:
+It describes the software’s expected features and functionality.
 
-- Software requirements specifications
-- System requirement specifications
-- User acceptance specifications
+Examples:
 
-### Design Documentation
+- Software Requirements Specification (SRS)
+- System requirements specification
+- User acceptance specification
 
-Design documentation explains how the software will be built to meet the requirements. It is usually written by software architects and the development team.
+### 2. Design Documentation
 
-Design documentation may include:
+Created by software architects and developers.
+
+It explains how the software will be built to satisfy its requirements.
+
+Types:
 
 - Conceptual design documents
 - Technical design documents
 
-### Technical Documentation
+### 3. Technical Documentation
 
-Technical documentation helps developers understand how the software works internally. It can include code comments, working papers, implementation notes, and documents that record engineers' ideas during development.
+Helps developers understand the system’s code and behavior.
 
-This type of documentation is useful when developers need to read, maintain, debug, or extend the code.
+Examples:
 
-### Quality Assurance Documentation
+- Code comments
+- Explanations of how the code works
+- Engineering working papers
+- Records of engineers’ ideas and implementation decisions
 
-Quality assurance, or QA, documentation includes documents related to the testing team's strategy, progress, and metrics.
+### 4. Quality Assurance Documentation
 
-Examples include:
+Records the testing team’s strategy, progress, and measurements.
+
+Examples:
 
 - Test plans
 - Test data
@@ -70,13 +86,13 @@ Examples include:
 - Test strategies
 - Traceability matrices
 
-A traceability matrix maps test cases to their related requirements. This helps teams confirm that the software is being tested against the expected functionality.
+A traceability matrix connects test cases to the requirements they verify.
 
-### User Documentation
+### 5. User Documentation
 
-User documentation is written for end users. It explains how to operate, install, troubleshoot, or learn the software.
+Helps end users operate, install, and troubleshoot the software.
 
-Examples include:
+Examples:
 
 - Frequently asked questions
 - Installation guides
@@ -86,22 +102,33 @@ Examples include:
 
 ## Standard Operating Procedures
 
-Standard operating procedures, or SOPs, often accompany process documentation. Process documentation gives an overview of a process, while an SOP gives much more detailed instructions.
+A Standard Operating Procedure (SOP) provides detailed, step-by-step instructions for completing a common but complex organization-specific task.
 
-An SOP is written documentation that explains step by step how to complete a common but organization-specific task. For example, many software engineers know how to check code into a repository, but a company may have its own required steps for getting code reviewed and merged into the main branch. The SOP explains those organization-specific steps in detail.
+Process documentation gives a general overview, while an SOP explains the exact procedure.
 
-SOPs can be written as:
+For example, developers generally know how to check code into a repository, but an organization’s SOP may specify the exact steps required to review and merge that code into the main branch.
+
+SOPs may use:
 
 - Flowcharts
 - Hierarchical outlines
 - Step-by-step instructions
 
-## Keeping Documentation Up to Date
+## Documentation Maintenance
 
-Documentation must be maintained as the software changes. For example, if the user interface of a cloud-based application changes, the online user manual should be updated to match the new interface.
+Documentation must be kept current as the software changes. For example, when a cloud application’s interface changes, its online user manual must also be updated.
 
-In the SDLC, documentation updates commonly happen during the maintenance phase. Ideally, documentation should also be reviewed periodically to make sure it is still accurate.
+Documentation updates generally occur during the SDLC maintenance phase. Organizations should:
 
-## Conclusion
+- Allocate resources for documentation updates
+- Review documentation periodically
+- Confirm that instructions remain accurate
 
-Product documentation explains the software product and how it functions. Process documentation explains how work should be completed. SOPs are a detailed form of process documentation that describe organization-specific procedures step by step. Good documentation helps teams build, test, maintain, and use software more effectively.
+## Key Takeaways
+
+- Documentation can be written, video-based, or graphical.
+- Product documentation explains a product’s functionality and use.
+- Process documentation explains how to complete a task.
+- Product documentation includes requirements, design, technical, QA, and user documentation.
+- SOPs provide detailed instructions for organization-specific procedures.
+- All documentation should be regularly reviewed and updated.
