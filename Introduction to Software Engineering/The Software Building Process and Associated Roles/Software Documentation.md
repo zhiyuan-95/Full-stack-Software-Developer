@@ -1,112 +1,43 @@
-# Software Documentation 
+# Software Documentation
 
-## Definition
+## Summary
 
-Software documentation explains:
+Software documentation explains what software is, how it works, how it is built, and how to use it. It supports every phase of the software development life cycle (SDLC) and must be maintained as the software changes.
 
-- What a software product is
-- How it works
-- How to use, install, or troubleshoot it
-- How it is developed and maintained
+## Core concepts
 
-Documentation is important throughout every phase of the Software Development Life Cycle (SDLC).
+### Documentation formats
 
-## Documentation Formats
+Documentation may be:
 
-Software documentation can be:
+- Written
+- Video
+- Graphical
 
-1. Written
-2. Video-based
-3. Graphical, such as diagrams and flowcharts
+Its audience can include end users, developers, QA engineers, system administrators, and other stakeholders.
 
-## Intended Audiences
-
-Documentation may be created for:
-
-- End users
-- Software developers
-- Software architects
-- QA engineers
-- System administrators
-- Other stakeholders
-
-## Main Categories
+### Product vs. process documentation
 
 | Category | Purpose |
 |---|---|
-| Product documentation | Describes the product’s features, functionality, construction, and use |
-| Process documentation | Explains how to complete a task or business process properly |
+| Product documentation | Describes the product’s features, functionality, design, operation, and use. |
+| Process documentation | Explains how to complete a task or implement a business process correctly. |
 
-## Types of Product Documentation
+## Product documentation types
 
-### 1. Requirements Documentation
+- **Requirements documentation:** Defines expected features and functionality. Examples include software requirements specifications, system requirements specifications, and user acceptance specifications.
+- **Design documentation:** Explains how the system will be built to meet its requirements. It includes conceptual and technical designs.
+- **Technical documentation:** Helps developers understand the code and implementation. Examples include code comments, working papers, and engineering notes.
+- **Quality assurance documentation:** Records testing strategy, progress, and metrics. Examples include test plans, data, scenarios, cases, strategies, and traceability matrices.
+- **User documentation:** Helps end users install, operate, or troubleshoot the software. Examples include FAQs, guides, tutorials, and user manuals.
 
-Created during the planning phase for developers, architects, and QA personnel.
+A **traceability matrix** maps test cases to the requirements they verify.
 
-It describes the software’s expected features and functionality.
+## Standard operating procedures
 
-Examples:
+A standard operating procedure, or **SOP**, provides detailed, step-by-step instructions for completing a common but complex organization-specific task.
 
-- Software Requirements Specification (SRS)
-- System requirements specification
-- User acceptance specification
-
-### 2. Design Documentation
-
-Created by software architects and developers.
-
-It explains how the software will be built to satisfy its requirements.
-
-Types:
-
-- Conceptual design documents
-- Technical design documents
-
-### 3. Technical Documentation
-
-Helps developers understand the system’s code and behavior.
-
-Examples:
-
-- Code comments
-- Explanations of how the code works
-- Engineering working papers
-- Records of engineers’ ideas and implementation decisions
-
-### 4. Quality Assurance Documentation
-
-Records the testing team’s strategy, progress, and measurements.
-
-Examples:
-
-- Test plans
-- Test data
-- Test scenarios
-- Test cases
-- Test strategies
-- Traceability matrices
-
-A traceability matrix connects test cases to the requirements they verify.
-
-### 5. User Documentation
-
-Helps end users operate, install, and troubleshoot the software.
-
-Examples:
-
-- Frequently asked questions
-- Installation guides
-- Help guides
-- Tutorials
-- User manuals
-
-## Standard Operating Procedures
-
-A Standard Operating Procedure (SOP) provides detailed, step-by-step instructions for completing a common but complex organization-specific task.
-
-Process documentation gives a general overview, while an SOP explains the exact procedure.
-
-For example, developers generally know how to check code into a repository, but an organization’s SOP may specify the exact steps required to review and merge that code into the main branch.
+For example, developers generally know how to check code into a repository, but an organization’s SOP may specify the exact steps required to review and merge that code into its main branch.
 
 SOPs may use:
 
@@ -114,21 +45,17 @@ SOPs may use:
 - Hierarchical outlines
 - Step-by-step instructions
 
-## Documentation Maintenance
+## Documentation maintenance
 
-Documentation must be kept current as the software changes. For example, when a cloud application’s interface changes, its online user manual must also be updated.
+Documentation must be updated whenever the software changes. For example, changes to a cloud application’s interface should be reflected in its online user manual.
 
-Documentation updates generally occur during the SDLC maintenance phase. Organizations should:
+Updating documentation is associated with the SDLC maintenance phase, although documentation should also be reviewed periodically for accuracy.
 
-- Allocate resources for documentation updates
-- Review documentation periodically
-- Confirm that instructions remain accurate
-
-## Key Takeaways
+## Key takeaways
 
 - Documentation can be written, video-based, or graphical.
-- Product documentation explains a product’s functionality and use.
-- Process documentation explains how to complete a task.
-- Product documentation includes requirements, design, technical, QA, and user documentation.
-- SOPs provide detailed instructions for organization-specific procedures.
-- All documentation should be regularly reviewed and updated.
+- Product documentation explains the software and its functionality.
+- Process documentation explains how to perform a task.
+- The five discussed product-documentation categories are requirements, design, technical, QA, and user documentation.
+- SOPs document an organization’s exact procedure in greater detail than general process documentation.
+- Documentation must remain synchronized with the software.
