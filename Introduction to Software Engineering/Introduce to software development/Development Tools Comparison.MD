@@ -1,4 +1,4 @@
-They’re all parts of the **software development ecosystem**, but they describe different layers or jobs. The easiest way to understand them is to see how they fit together in one application.
+#**software development ecosystem**
 
 ### Big picture
 
