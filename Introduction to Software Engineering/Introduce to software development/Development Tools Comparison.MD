@@ -1,4 +1,4 @@
-#**software development ecosystem**
+# software development ecosystem
 
 ### Big picture
 
