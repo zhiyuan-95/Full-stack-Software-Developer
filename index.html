@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An editorial, source-backed guide to the six phases of the software development life cycle.">
+  <title>SDLC Field Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" data-nav-home><span class="brand-mark" aria-hidden="true">SL</span><span>SDLC Field Guide <small>Repository edition</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>Menu</button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
+        <a href="index.html" data-nav-home>Overview</a>
+        <a href="phases/planning.html" data-phase-link="planning">Planning</a>
+        <a href="phases/design.html" data-phase-link="design">Design</a>
+        <a href="phases/development.html" data-phase-link="development">Development</a>
+        <a href="phases/testing.html" data-phase-link="testing">Testing</a>
+        <a href="phases/deployment.html" data-phase-link="deployment">Deployment</a>
+        <a href="phases/maintenance.html" data-phase-link="maintenance">Maintenance</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="kicker">Software Development Life Cycle</p>
+        <h1 id="page-title" data-pretext contenteditable="true" spellcheck="true" aria-label="Editable page title">SDLC, phase by phase.</h1>
+        <p class="hero-lede" data-pretext contenteditable="true" spellcheck="true" aria-label="Editable introduction">A source-backed map of how an idea becomes working software, how that software reaches production, and how real-world learning starts the next cycle.</p>
+      </div>
+      <aside class="hero-aside" aria-label="How to use this guide">
+        <strong>Start with the flow.</strong>
+        <p>Click a phase to open its page. Documentation and methodology apply across the whole loop.</p>
+      </aside>
+    </section>
+
+    <section class="section" id="lifecycle" aria-labelledby="lifecycle-title">
+      <div class="section-head">
+        <div><p class="section-label">SDLC architecture flow</p><h2 class="section-title" id="lifecycle-title">Six connected phases. One feedback loop.</h2></div>
+        <p class="section-intro" data-pretext contenteditable="true" spellcheck="true">Follow the arrows from Planning to Maintenance. Each phase is a direct link to its detailed page, and production learning returns to Planning for the next cycle.</p>
+      </div>
+      <div class="lifecycle-frame">
+        <ol class="lifecycle-grid" aria-label="Clickable SDLC architecture flow from Planning through Maintenance">
+          <li class="phase-card"><a href="phases/planning.html" aria-label="Open the Planning phase"><span class="phase-number">01 · Discover</span><h3>Planning</h3><p>Needs, requirements, scope, feasibility, risk, and success criteria.</p></a></li>
+          <li class="phase-card"><a href="phases/design.html" aria-label="Open the Design phase"><span class="phase-number">02 · Shape</span><h3>Design</h3><p>Architecture, components, interfaces, data, security, and experience.</p></a></li>
+          <li class="phase-card"><a href="phases/development.html" aria-label="Open the Development phase"><span class="phase-number">03 · Build</span><h3>Development</h3><p>Source code, review, automated checks, integration, and a reproducible build.</p></a></li>
+          <li class="phase-card"><a href="phases/testing.html" aria-label="Open the Testing phase"><span class="phase-number">04 · Verify</span><h3>Testing</h3><p>Unit, integration, system, acceptance, and quality-attribute evidence.</p></a></li>
+          <li class="phase-card"><a href="phases/deployment.html" aria-label="Open the Deployment phase"><span class="phase-number">05 · Release</span><h3>Deployment</h3><p>Controlled promotion, production checks, monitoring, and recovery.</p></a></li>
+          <li class="phase-card"><a href="phases/maintenance.html" aria-label="Open the Maintenance phase"><span class="phase-number">06 · Learn</span><h3>Maintenance</h3><p>Operate, correct, document, and return evidence to the next plan.</p></a></li>
+        </ol>
+        <p class="loop-return">Maintenance evidence and user feedback return to Planning</p>
+      </div>
+    </section>
+
+    <section class="section" id="documentation" aria-labelledby="documentation-title">
+      <div class="section-head">
+        <div><p class="section-label">Lifecycle-wide segment 01</p><h2 class="section-title" id="documentation-title">Documentation keeps the work understandable.</h2></div>
+        <p class="section-intro" data-pretext contenteditable="true" spellcheck="true">Documentation is not a seventh phase. It is evidence and guidance created throughout the lifecycle, then kept synchronized with the software during maintenance.</p>
+      </div>
+      <article class="editorial-panel docs">
+        <h3>Product and process documentation</h3>
+        <p><strong>Product documentation</strong> explains the software, its design, behavior, operation, and use. <strong>Process documentation</strong> explains how people should complete a task or business process.</p>
+        <ul class="plain-list">
+          <li><strong>Requirements documentation</strong><span>Defines expected features, behavior, constraints, interfaces, and acceptance expectations. Common examples are an SRS, SysRS, and URS.</span></li>
+          <li><strong>Design documentation</strong><span>Explains how architecture, components, data, interfaces, and deployment choices will satisfy the requirements.</span></li>
+          <li><strong>Technical documentation</strong><span>Helps developers understand and maintain the implementation through code comments, README files, API references, and engineering notes.</span></li>
+          <li><strong>Quality assurance documentation</strong><span>Records the test strategy, cases, data, results, defects, metrics, and traceability between requirements and evidence.</span></li>
+          <li><strong>User documentation</strong><span>Helps end users install, operate, and troubleshoot the product through guides, tutorials, help content, and manuals.</span></li>
+          <li><strong>Standard operating procedure (SOP)</strong><span>Provides the exact organization-specific steps for a repeated, complex task, such as reviewing and merging code into the main branch.</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" id="methodology" aria-labelledby="methodology-title">
+      <div class="section-head">
+        <div><p class="section-label">Lifecycle-wide segment 02</p><h2 class="section-title" id="methodology-title">Methodology changes the cadence, not the vocabulary.</h2></div>
+        <p class="section-intro" data-pretext contenteditable="true" spellcheck="true">A methodology is the operating pattern a team uses to organize lifecycle work. Waterfall and V-Shape move sequentially; Agile repeats the same kinds of work in short cycles.</p>
+      </div>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Methodology comparison table">
+        <table class="methodology-table">
+          <thead><tr><th scope="col">Method</th><th scope="col">Flow</th><th scope="col">Testing</th><th scope="col">Feedback</th><th scope="col">Best fit</th><th scope="col">Main tradeoff</th></tr></thead>
+          <tbody>
+            <tr><td>Waterfall</td><td>Sequential: one phase completes before the next begins.</td><td>Usually concentrated later in development.</td><td>Substantial customer feedback arrives late.</td><td>Stable requirements and a strong need for upfront estimates.</td><td>Easy to understand and plan, but costly to change late.</td></tr>
+            <tr><td>V-Shape</td><td>Sequential: verification work is paired with validation work.</td><td>Planned early and executed against its paired design level.</td><td>Structured checkpoints, but limited late flexibility.</td><td>Stable, highly structured projects where test planning must start early.</td><td>Clear evidence pairing, but even more rigid than Waterfall.</td></tr>
+            <tr><td>Agile</td><td>Iterative: planning, design, development, and testing repeat in sprints.</td><td>Continuous inside each sprint.</td><td>Frequent demos and stakeholder feedback.</td><td>Changing requirements and incremental delivery.</td><td>Adapts quickly, but long-range budget and schedule estimates are harder.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="outside-grid" style="margin-top: 2rem;">
+        <article class="editorial-panel methods"><h3>V-Shape language</h3><p><strong>Verification</strong> asks whether the team designed and built the product correctly. <strong>Validation</strong> asks whether the completed behavior satisfies the user and business need. Each design level is paired with a corresponding test level.</p></article>
+        <article class="editorial-panel methods"><h3>Agile language</h3><p>A <strong>sprint</strong> is a short development cycle, usually one to four weeks. A <strong>sprint demo</strong> shows working functionality. A <strong>minimum viable product (MVP)</strong> contains enough core functionality to test the product idea and gather useful feedback.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="glossary" aria-labelledby="glossary-title">
+      <div class="section-head">
+        <div><p class="section-label">Plain-language reference</p><h2 class="section-title" id="glossary-title">Terminology index</h2></div>
+        <p class="section-intro">Specialized terms used across the guide are defined here. Each phase page also repeats the terms needed to understand that phase without returning to this page.</p>
+      </div>
+      <div class="glossary-tools">
+        <label><span class="eyebrow">Find a term</span><input class="term-search" type="search" placeholder="Try “traceability” or “API”" data-term-search></label>
+        <span class="eyebrow" data-term-count>36 terms</span>
+      </div>
+      <dl class="glossary-grid">
+        <div class="term" data-term><dt>Acceptance criteria</dt><dd>Observable conditions that must be true for a requirement or feature to be accepted.</dd></div>
+        <div class="term" data-term><dt>Agile</dt><dd>An iterative approach that delivers working software in short cycles and uses frequent feedback to adjust future work.</dd></div>
+        <div class="term" data-term><dt>API</dt><dd>An application programming interface: a defined way for software components or services to request data or behavior from one another.</dd></div>
+        <div class="term" data-term><dt>Application environment</dt><dd>The hardware, operating system, network, libraries, configuration, and other resources needed to run an application.</dd></div>
+        <div class="term" data-term><dt>Architecture</dt><dd>The high-level structure of a system, including its major parts, responsibilities, boundaries, and connections.</dd></div>
+        <div class="term" data-term><dt>Artifact</dt><dd>A work product created during development, such as a requirement, diagram, source file, test result, build, or runbook.</dd></div>
+        <div class="term" data-term><dt>Assumption</dt><dd>A condition expected to be true for planning purposes but not yet proven.</dd></div>
+        <div class="term" data-term><dt>Backlog</dt><dd>An ordered list of work, defects, improvements, and requirements that a team may address.</dd></div>
+        <div class="term" data-term><dt>Component</dt><dd>An encapsulated unit of functionality that collaborates with other parts of an application.</dd></div>
+        <div class="term" data-term><dt>Constraint</dt><dd>A limit that narrows available choices, such as a law, platform, deadline, budget, or security rule.</dd></div>
+        <div class="term" data-term><dt>Dependency</dt><dd>Another system, library, service, team, or condition that the software relies on.</dd></div>
+        <div class="term" data-term><dt>Deployment</dt><dd>The controlled process of releasing software and its configuration into an environment where it can run.</dd></div>
+        <div class="term" data-term><dt>Distributed system</dt><dd>A system whose services run on different networked machines while appearing to users as one coherent product.</dd></div>
+        <div class="term" data-term><dt>Exit signal</dt><dd>The evidence that a phase has done enough work for the next phase to proceed responsibly; often called an exit gate.</dd></div>
+        <div class="term" data-term><dt>Functional requirement</dt><dd>A statement of what the software must do, such as calculate a result or allow a user to complete a task.</dd></div>
+        <div class="term" data-term><dt>Iteration</dt><dd>One pass through a repeated cycle of planning, building, checking, and learning.</dd></div>
+        <div class="term" data-term><dt>Maintainability</dt><dd>How easily software can be understood, corrected, adapted, and improved.</dd></div>
+        <div class="term" data-term><dt>Methodology</dt><dd>A structured approach for organizing how a team plans, communicates, builds, tests, releases, and responds to feedback.</dd></div>
+        <div class="term" data-term><dt>Module</dt><dd>A distinct part of a software system that groups related responsibilities.</dd></div>
+        <div class="term" data-term><dt>Nonfunctional requirement</dt><dd>A quality or operating expectation, such as security, performance, reliability, accessibility, or scalability.</dd></div>
+        <div class="term" data-term><dt>Prototype</dt><dd>A preliminary model used to test an idea, clarify an uncertain requirement, or collect early feedback.</dd></div>
+        <div class="term" data-term><dt>Quality assurance (QA)</dt><dd>Planned work used to prevent, find, record, and resolve quality problems.</dd></div>
+        <div class="term" data-term><dt>Regression testing</dt><dd>Rechecking existing behavior after a change to find accidental breakage.</dd></div>
+        <div class="term" data-term><dt>Requirement</dt><dd>A documented need, behavior, interface, constraint, or quality expectation the system must satisfy.</dd></div>
+        <div class="term" data-term><dt>SDLC</dt><dd>The Software Development Life Cycle: the connected phases used to plan, design, build, test, release, and maintain software.</dd></div>
+        <div class="term" data-term><dt>Service</dt><dd>An independently deployable unit that provides a business capability to clients or other systems.</dd></div>
+        <div class="term" data-term><dt>Software stack</dt><dd>The combined languages, frameworks, libraries, runtime, data tools, and infrastructure used to build and run software.</dd></div>
+        <div class="term" data-term><dt>Sprint</dt><dd>A short Agile cycle in which a team plans, builds, tests, and demonstrates a small increment of working software.</dd></div>
+        <div class="term" data-term><dt>Stakeholder</dt><dd>A person or group that uses, funds, builds, operates, approves, sells, supports, or is affected by the software.</dd></div>
+        <div class="term" data-term><dt>System Under Test (SUT)</dt><dd>The application, service, feature, module, or complete system currently being tested.</dd></div>
+        <div class="term" data-term><dt>Traceability matrix</dt><dd>A table that connects requirements to the design, implementation, and test evidence that satisfy or verify them.</dd></div>
+        <div class="term" data-term><dt>UAT</dt><dd>User acceptance testing: formal testing by users or stakeholders to decide whether the software meets their needs.</dd></div>
+        <div class="term" data-term><dt>UML</dt><dd>Unified Modeling Language: a standard visual notation for representing software structure and behavior.</dd></div>
+        <div class="term" data-term><dt>URS</dt><dd>User Requirements Specification: a description of business needs and end-user expectations.</dd></div>
+        <div class="term" data-term><dt>SRS</dt><dd>Software Requirements Specification: a detailed description of the software’s required behavior, interfaces, constraints, and qualities.</dd></div>
+        <div class="term" data-term><dt>SysRS</dt><dd>System Requirements Specification: requirements for the full system, including software, hardware, policies, people, and interfaces.</dd></div>
+      </dl>
+    </section>
+
+    <section class="source-strip" aria-labelledby="sources-title">
+      <div><h2 id="sources-title">Repository basis</h2><p>This guide synthesizes the current main-branch course notes. Explanations are paraphrased and organized for navigation; the repository remains the source of truth.</p></div>
+      <ul class="source-links">
+        <li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/The%20SDE%20lifecycle/Overview%20of%20Software%20Engineer.md">SDLC, quality, and requirements</a></li>
+        <li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/The%20SDE%20lifecycle/Methodologies.md">Waterfall, V-Shape, Agile, and testing</a></li>
+        <li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/The%20SDE%20lifecycle/Documentation.md">Documentation and traceability</a></li>
+        <li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/The%20SDE%20lifecycle/Testing.md">Testing levels</a></li>
+        <li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/Software%20Architecture,%20Design.%20and%20Patterns/Software%20Design%20and%20Modeling.md">Software design, modeling, and UML</a></li>
+        <li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/Software%20Architecture,%20Design.%20and%20Patterns/Approaches%20to%20Application%20Architecture.md">Components, services, and distributed systems</a></li>
+        <li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/Software%20Architecture,%20Design.%20and%20Patterns/Application%20Deployment%20Environments.md">Application deployment environments</a></li>
+        <li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/Software%20Architecture,%20Design.%20and%20Patterns/Production%20Deployment%20Components.md">Production deployment components</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><span>SDLC Field Guide · Six-phase repository edition</span><a href="#main-content">Back to top</a></div></footer>
+  <script type="module" src="assets/site.js?v=2"></script>
+</body>
+</html>

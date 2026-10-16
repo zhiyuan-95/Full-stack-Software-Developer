@@ -1,0 +1,23 @@
+flowchart TB
+    NEED["Stakeholder need"] --> URS["URS<br/>User stories / use cases"]
+    URS --> SRS["SRS / SysRS<br/>Acceptance criteria"]
+    SRS --> DESIGN["SDD + UML<br/>API, data, security specs"]
+    DESIGN --> BUILD["Source + build<br/>Config and migrations"]
+    SRS --> TEST["Test plan + cases<br/>Traceability matrix"]
+    BUILD --> TEST
+    TEST --> RELEASE["Test report<br/>Release + rollback plan"]
+    RELEASE --> OPS["Logs, metrics<br/>Incidents and feedback"]
+    OPS -. "next iteration" .-> NEED
+
+    classDef intent fill:#EAF2FC,stroke:#2962A8,color:#122033,stroke-width:2px
+    classDef definition fill:#E9F7F4,stroke:#18867F,color:#122033,stroke-width:2px
+    classDef design fill:#F1ECF8,stroke:#7658A8,color:#122033,stroke-width:2px
+    classDef build fill:#FFF4DF,stroke:#D28B2F,color:#122033,stroke-width:2px
+    classDef verify fill:#FDECE8,stroke:#D75C48,color:#122033,stroke-width:2px
+    classDef operate fill:#EBF3EC,stroke:#4D8D5B,color:#122033,stroke-width:2px
+    class NEED intent
+    class URS,SRS definition
+    class DESIGN design
+    class BUILD build
+    class TEST,RELEASE verify
+    class OPS operate

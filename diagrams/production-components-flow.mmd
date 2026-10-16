@@ -1,0 +1,17 @@
+flowchart TB
+    USER["Users / client apps"] --> FW["Firewall<br/>Permit or block traffic"]
+    FW --> WLB["Web load balancer<br/>Distribute requests"]
+    WLB --> WEB["Web server pool<br/>Pages, files, HTTP"]
+    WEB --> PROXY["App load balancer / proxy<br/>Route and optimize"]
+    PROXY --> APP["Application server pool<br/>Business logic"]
+    APP --> DB[("Database server + DBMS<br/>Store and manage data")]
+    DB --> REPLICA[("High-availability replica")]
+
+    classDef edge fill:#EAF2FC,stroke:#2962A8,color:#122033,stroke-width:2px
+    classDef route fill:#E9F7F4,stroke:#18867F,color:#122033,stroke-width:2px
+    classDef compute fill:#FFF4DF,stroke:#D28B2F,color:#122033,stroke-width:2px
+    classDef data fill:#F1ECF8,stroke:#7658A8,color:#122033,stroke-width:2px
+    class USER,FW edge
+    class WLB,PROXY route
+    class WEB,APP compute
+    class DB,REPLICA data

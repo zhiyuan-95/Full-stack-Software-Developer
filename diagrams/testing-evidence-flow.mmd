@@ -1,0 +1,21 @@
+flowchart TB
+    REQ["Approved requirements"] --> PLAN["Test plan<br/>Cases + data + expected results"]
+    PLAN --> UNIT["Unit test<br/>Small code sections"]
+    UNIT --> INT["Integration test<br/>Combined modules"]
+    INT --> SYS["System test<br/>Complete product in staging"]
+    SYS --> UAT["Acceptance test<br/>User and business needs"]
+    UAT --> DEC{"Exit criteria met?"}
+    DEC -- "No" --> DEF["Defect record<br/>Fix + regression test"]
+    DEF --> UNIT
+    DEC -- "Yes" --> REPORT["Test report<br/>Release approval"]
+
+    classDef input fill:#EAF2FC,stroke:#2962A8,color:#122033,stroke-width:2px
+    classDef activity fill:#FFFDF8,stroke:#17324D,color:#122033,stroke-width:2px
+    classDef decision fill:#FFF4DF,stroke:#D28B2F,color:#122033,stroke-width:2px
+    classDef failure fill:#FDECE8,stroke:#D75C48,color:#122033,stroke-width:2px
+    classDef success fill:#EBF3EC,stroke:#4D8D5B,color:#122033,stroke-width:2px
+    class REQ input
+    class PLAN,UNIT,INT,SYS,UAT activity
+    class DEC decision
+    class DEF failure
+    class REPORT success

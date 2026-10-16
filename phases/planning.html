@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Planning phase of the SDLC: stakeholders, goals, requirements, scope, risk, and approval.">
+  <title>Planning · SDLC Field Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="phase-page" data-phase="planning">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">SL</span><span>SDLC Field Guide <small>Repository edition</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>Menu</button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
+        <a href="../index.html" data-nav-home>Overview</a><a href="planning.html" data-phase-link="planning">Planning</a><a href="design.html" data-phase-link="design">Design</a><a href="development.html" data-phase-link="development">Development</a><a href="testing.html" data-phase-link="testing">Testing</a><a href="deployment.html" data-phase-link="deployment">Deployment</a><a href="maintenance.html" data-phase-link="maintenance">Maintenance</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">SDLC overview</a><span aria-hidden="true">/</span><span>Planning</span></nav>
+    <section class="phase-hero" aria-labelledby="phase-title">
+      <div>
+        <p class="folio">Phase 01 · Direction and requirements</p>
+        <h1 id="phase-title" data-pretext contenteditable="true" spellcheck="true">Planning</h1>
+        <p class="phase-summary" data-pretext contenteditable="true" spellcheck="true">Determine what should be built, why it matters, who is affected, what conditions it must satisfy, and whether the work is feasible before design begins.</p>
+      </div>
+      <aside class="phase-stamp" data-number="01"><strong>Question this phase answers</strong><p>Do we understand the problem and have an approved, testable basis for designing the right solution?</p></aside>
+    </section>
+
+    <div class="phase-body">
+      <aside class="phase-toc"><h2>On this page</h2><ol><li><a href="#glance">At a glance</a></li><li><a href="#workflow">Planning workflow</a></li><li><a href="#requirements">Requirements documents</a></li><li><a href="#evidence">Evidence and exit</a></li><li><a href="#terms">Terminology</a></li></ol></aside>
+      <div class="phase-content">
+        <section class="content-section" id="glance">
+          <p class="section-label">At a glance</p><h2>Planning turns an idea into an agreed direction.</h2>
+          <p data-pretext data-pretext-inset="70" contenteditable="true" spellcheck="true">Planning combines business intent with requirements work. The team identifies stakeholders, sets goals and measurable objectives, gathers and analyzes needs, defines scope and constraints, estimates cost and schedule, and records the risks that could change the plan.</p>
+          <div class="at-a-glance">
+            <article class="glance-item"><small>Inputs</small><strong>A problem or opportunity</strong><p>User needs, business goals, regulations, operating context, feedback, and known constraints.</p></article>
+            <article class="glance-item"><small>Core work</small><strong>Understand and agree</strong><p>Elicit, document, analyze, confirm, and prioritize requirements while testing feasibility.</p></article>
+            <article class="glance-item"><small>Outputs</small><strong>An approved baseline</strong><p>Scope, schedule, risks, ownership, requirements documents, priorities, and acceptance expectations.</p></article>
+          </div>
+        </section>
+
+        <section class="content-section" id="workflow">
+          <p class="section-label">Repository workflow</p><h2>Six steps for requirements gathering</h2>
+          <ol class="step-list">
+            <li><div><strong>Identify stakeholders</strong><span>Include representatives from every affected group: decision-makers, users, administrators, engineering, marketing, sales, support, and other relevant parties.</span></div></li>
+            <li><div><strong>Establish goals and objectives</strong><span>Goals describe broad long-term outcomes. Objectives turn those goals into specific, actionable, measurable steps.</span></div></li>
+            <li><div><strong>Elicit requirements</strong><span>Collect information through interviews, surveys, questionnaires, observation, workshops, or prototypes when an idea needs clarification.</span></div></li>
+            <li><div><strong>Document requirements</strong><span>Record needs in language that both stakeholders and the project team can understand, including behavior, interfaces, constraints, and quality expectations.</span></div></li>
+            <li><div><strong>Analyze and confirm</strong><span>Check the requirements for clarity, consistency, completeness, feasibility, and alignment with the project goals, then obtain approval.</span></div></li>
+            <li><div><strong>Prioritize</strong><span>Rank requirements by value and urgency using categories such as must-have, highly desired, and nice-to-have.</span></div></li>
+          </ol>
+          <p class="callout"><strong>Iteration is normal:</strong> elicitation, documentation, and confirmation repeat as people discover conflicts or clarify what success means. A prototype can be used at any phase when uncertainty reappears.</p>
+        </section>
+
+        <section class="content-section" id="requirements">
+          <p class="section-label">Planning artifacts</p><h2>Three requirements documents with different scopes</h2>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Requirements document comparison">
+            <table class="evidence-table">
+              <thead><tr><th scope="col">Document</th><th scope="col">What it covers</th><th scope="col">Typical contents</th></tr></thead>
+              <tbody>
+                <tr><td>URS</td><td>User Requirements Specification: business needs and end-user expectations.</td><td>User stories or use cases that identify the user, the needed function, and its value.</td></tr>
+                <tr><td>SRS</td><td>Software Requirements Specification: the required behavior of the software.</td><td>Purpose, scope, constraints, assumptions, dependencies, functional requirements, external interfaces, system features, and nonfunctional requirements.</td></tr>
+                <tr><td>SysRS</td><td>System Requirements Specification: the full system, including hardware and software.</td><td>Capabilities, interfaces, users, policies, regulations, staffing, performance, security, hardware, and acceptance criteria.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="callout"><strong>Common usage:</strong> the SRS is the most common document, and user requirements may be included within it. A SysRS is broader, though teams sometimes use SRS and SysRS interchangeably.</p>
+        </section>
+
+        <section class="content-section" id="evidence">
+          <p class="section-label">Evidence and handoff</p><h2>What Design should receive</h2>
+          <ul class="plain-list">
+            <li><strong>Defined problem and outcome</strong><span>The team can explain the user or business problem and measure whether the finished software improves it.</span></li>
+            <li><strong>Approved requirements</strong><span>Functional behavior, interfaces, features, quality expectations, constraints, assumptions, and dependencies are documented and prioritized.</span></li>
+            <li><strong>Delivery boundaries</strong><span>Scope, budget, schedule, resources, compliance needs, owners, risks, and unresolved questions are visible.</span></li>
+            <li><strong>Acceptance basis</strong><span>Critical requirements have observable acceptance criteria so later testing can produce meaningful evidence.</span></li>
+          </ul>
+          <div class="diagram-card">
+            <div class="diagram-copy"><h3>Artifact traceability</h3><p>This existing project diagram shows how stakeholder needs remain connected to design, code, tests, releases, and operational learning.</p></div>
+            <img src="../diagrams/artifact-traceability-flow.svg" alt="Flow from stakeholder need through requirements, design, build, test, release, operations, and the next iteration">
+            <div class="diagram-links"><a href="../diagrams/artifact-traceability-flow.mmd">Mermaid source</a><a href="../diagrams/artifact-traceability-flow.excalidraw">Editable Excalidraw</a><a href="../diagrams/artifact-traceability-flow.png">PNG</a></div>
+          </div>
+        </section>
+
+        <section class="content-section" id="terms">
+          <p class="section-label">Plain-language terminology</p><h2>Terms used in Planning</h2>
+          <dl class="term-grid">
+            <div class="term"><dt>Stakeholder</dt><dd>A person or group that uses, funds, builds, operates, approves, supports, sells, or is affected by the software.</dd></div>
+            <div class="term"><dt>Goal</dt><dd>A broad, long-term outcome the project intends to support.</dd></div>
+            <div class="term"><dt>Objective</dt><dd>A specific, actionable, measurable step toward a goal.</dd></div>
+            <div class="term"><dt>Elicitation</dt><dd>The act of drawing out needs and knowledge through interviews, surveys, observation, workshops, or other research.</dd></div>
+            <div class="term"><dt>Functional requirement</dt><dd>A statement of what the software must do.</dd></div>
+            <div class="term"><dt>External-interface requirement</dt><dd>A rule for how the software interacts with a person, hardware device, or another software system.</dd></div>
+            <div class="term"><dt>System feature</dt><dd>A required capability that helps the system perform its functions; it is a subset of functional requirements.</dd></div>
+            <div class="term"><dt>Nonfunctional requirement</dt><dd>A quality or operating expectation, such as performance, security, accessibility, reliability, or safety.</dd></div>
+            <div class="term"><dt>Constraint</dt><dd>A limit that narrows design choices, such as a platform, regulation, budget, or deadline.</dd></div>
+            <div class="term"><dt>Assumption</dt><dd>A condition expected to be true for planning purposes but not yet proven.</dd></div>
+            <div class="term"><dt>Dependency</dt><dd>Another system, service, team, library, or condition that the proposed software relies on.</dd></div>
+            <div class="term"><dt>Acceptance criteria</dt><dd>Observable conditions that must be met for a requirement or feature to be accepted.</dd></div>
+            <div class="term"><dt>Prototype</dt><dd>A small-scale model or preliminary mock-up used to test an idea and collect feedback before committing to a full solution.</dd></div>
+          </dl>
+        </section>
+      </div>
+    </div>
+
+    <nav class="phase-pagination" aria-label="Phase navigation"><a href="maintenance.html"><small>Loop back from</small><strong>← Maintenance</strong></a><a href="design.html"><small>Next phase</small><strong>Design →</strong></a></nav>
+    <section class="source-strip" aria-label="Source note"><div><h3>Source note</h3><p>Planning content follows the repository’s SDLC, quality, and requirements summary.</p></div><ul class="source-links"><li><a href="https://github.com/zhiyuan-95/Full-stack-Software-Developer/blob/main/Introduction%20to%20Software%20Engineering/The%20SDE%20lifecycle/Overview%20of%20Software%20Engineer.md">Open the source document on GitHub</a></li><li><a href="../index.html#documentation">See lifecycle-wide documentation</a></li></ul></section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>Phase 01 of 06 · Planning</span><a href="#main-content">Back to top</a></div></footer>
+  <script type="module" src="../assets/site.js?v=2"></script>
+</body>
+</html>
