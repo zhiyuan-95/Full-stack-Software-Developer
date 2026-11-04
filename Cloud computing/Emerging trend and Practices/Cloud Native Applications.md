@@ -1,9 +1,3 @@
-I consolidated the repeated content into a structured study note, organizing the definitions, architecture, technologies, design principles, benefits, and practical examples. The terminology and concepts are based on the IBM Cloud transcript you provided.&#x20;
-
-Pasted text.txt
-
-
-
 # Cloud-Native Applications — Detailed Study Notes
 
 ## 1. What Is a Cloud-Native Application?
